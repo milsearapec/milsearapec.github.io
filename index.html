@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>MILSEARA PECUARIA E AGRICULTURA LTDA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html,
+body {
+margin: 0;
+padding: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+background-color: #111111;
+color: #2c1a0f;
+scroll-behavior: smooth;
+}
+body {
+display: flex;
+justify-content: center;
+}
+.page-wrapper {
+max-width: 1200px;
+width: 100%;
+background-color: #f6f2ea;
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+margin: 40px 16px;
+}
+.hero {
+background: linear-gradient(90deg, #f6e1b9 0%, #f6e1b9 55%, #f6f2ea 55%, #f6f2ea 100%);
+position: relative;
+overflow: hidden;
+min-height: 420px;
+display: flex;
+flex-direction: column;
+}
+.hero-inner {
+display: flex;
+flex: 1;
+}
+.hero-text {
+flex: 1;
+padding: 40px 60px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.hero-text h1 {
+font-size: 40px;
+margin: 0 0 16px 0;
+letter-spacing: 1px;
+}
+.hero-text p {
+margin: 4px 0;
+line-height: 1.6;
+max-width: 520px;
+}
+.hero-badge {
+display: inline-block;
+margin-bottom: 12px;
+padding: 6px 14px;
+border-radius: 999px;
+background-color: #fff3dd;
+font-size: 12px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+}
+.hero-cta {
+margin-top: 28px;
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+}
+.hero-button {
+border: none;
+padding: 12px 24px;
+border-radius: 999px;
+background-color: #a4452a;
+color: #ffffff;
+font-size: 14px;
+cursor: pointer;
+transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.hero-button:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+background-color: #8c3520;
+}
+.hero-link {
+border-radius: 999px;
+border: 1px solid #a4452a;
+background-color: transparent;
+color: #a4452a;
+padding: 11px 24px;
+font-size: 14px;
+cursor: pointer;
+transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.hero-link:hover {
+background-color: #a4452a;
+color: #ffffff;
+transform: translateY(-2px);
+}
+.hero-image-wrapper {
+flex: 1;
+position: relative;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+padding: 40px 40px 0 40px;
+}
+.hero-image {
+width: 100%;
+max-width: 520px;
+height: auto;
+object-fit: cover;
+filter: grayscale(100%) contrast(1.1);
+mix-blend-mode: multiply;
+}
+.hero-overlay-label {
+position: absolute;
+bottom: 28px;
+right: 40px;
+background-color: rgba(0, 0, 0, 0.7);
+color: #f6f2ea;
+padding: 8px 16px;
+font-size: 12px;
+border-radius: 20px;
+}
+.navbar {
+position: sticky;
+top: 0;
+z-index: 20;
+background-color: #f6f2ea;
+border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+.nav-inner {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 12px 40px;
+}
+.logo {
+font-family: "Georgia", "Times New Roman", serif;
+font-size: 18px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+}
+.logo span {
+font-weight: 700;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+}
+.nav-links a {
+text-decoration: none;
+font-size: 14px;
+color: #5e4731;
+position: relative;
+padding-bottom: 4px;
+}
+.nav-links a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+height: 2px;
+background-color: #a4452a;
+transition: width 0.25s ease;
+}
+.nav-links a:hover::after {
+width: 100%;
+}
+.nav-contact-button {
+border-radius: 999px;
+border: 1px solid #a4452a;
+background-color: #a4452a;
+color: #ffffff;
+padding: 8px 18px;
+font-size: 13px;
+cursor: pointer;
+transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.nav-contact-button:hover {
+background-color: #8c3520;
+transform: translateY(-1px);
+}
+.section {
+padding: 72px 60px;
+background-color: #f6f2ea;
+}
+.section-header {
+max-width: 720px;
+margin: 0 auto 40px auto;
+text-align: center;
+}
+.section-kicker {
+text-transform: uppercase;
+letter-spacing: 0.2em;
+font-size: 11px;
+color: #a4452a;
+margin-bottom: 8px;
+}
+.section-title {
+font-size: 26px;
+margin: 0 0 8px 0;
+}
+.section-subtitle {
+margin: 0;
+font-size: 15px;
+color: #6d563f;
+line-height: 1.5;
+}
+.cards-row {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+}
+.card {
+background-color: #ffffff;
+border-radius: 18px;
+padding: 20px 20px 24px 20px;
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+.card-tag {
+font-size: 11px;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: #a4452a;
+margin-bottom: 6px;
+}
+.card-title {
+font-size: 18px;
+margin: 0 0 6px 0;
+}
+.card-text {
+font-size: 14px;
+margin: 4px 0;
+line-height: 1.6;
+color: #6d563f;
+}
+.card-badge {
+margin-top: 12px;
+align-self: flex-start;
+padding: 4px 10px;
+border-radius: 999px;
+background-color: #fff3dd;
+font-size: 11px;
+}
+.section-highlight {
+display: grid;
+grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+gap: 32px;
+align-items: center;
+}
+.section-highlight-image {
+position: relative;
+border-radius: 26px;
+overflow: hidden;
+min-height: 260px;
+background-image: url("https://images.pexels.com/photos/735968/pexels-photo-735968.jpeg");
+background-size: cover;
+background-position: center;
+}
+.section-highlight-note {
+position: absolute;
+bottom: 18px;
+left: 18px;
+background-color: rgba(0, 0, 0, 0.65);
+color: #f6f2ea;
+padding: 8px 14px;
+font-size: 12px;
+border-radius: 16px;
+}
+.section-highlight-text h3 {
+margin: 0 0 10px 0;
+font-size: 22px;
+}
+.section-highlight-text p {
+margin: 0 0 6px 0;
+font-size: 14px;
+line-height: 1.7;
+color: #6d563f;
+}
+.list {
+margin: 16px 0 0 0;
+padding-left: 18px;
+}
+.list li {
+margin-bottom: 6px;
+font-size: 14px;
+}
+.benefits-row {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+}
+.benefit {
+background-color: #ffffff;
+border-radius: 20px;
+padding: 22px 20px;
+box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+}
+.benefit h3 {
+margin: 0 0 8px 0;
+font-size: 17px;
+}
+.benefit p {
+margin: 0;
+font-size: 14px;
+line-height: 1.7;
+color: #6d563f;
+}
+.process-steps {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+margin-top: 32px;
+}
+.step {
+background-color: #ffffff;
+border-radius: 22px;
+padding: 22px 20px 26px 20px;
+position: relative;
+box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+}
+.step-number {
+position: absolute;
+top: -12px;
+left: 20px;
+background-color: #a4452a;
+color: #ffffff;
+border-radius: 999px;
+padding: 4px 10px;
+font-size: 12px;
+}
+.step h3 {
+margin: 18px 0 8px 0;
+font-size: 17px;
+}
+.step p {
+margin: 0;
+font-size: 14px;
+line-height: 1.7;
+color: #6d563f;
+}
+.process-arrow {
+display: none;
+}
+.contact-section {
+background-color: #f0e7d4;
+}
+.contact-actions {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 28px;
+}
+.contact-button-primary {
+border: none;
+padding: 12px 26px;
+border-radius: 999px;
+background-color: #a4452a;
+color: #ffffff;
+font-size: 14px;
+cursor: pointer;
+transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-button-primary:hover {
+background-color: #8c3520;
+transform: translateY(-2px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+.contact-button-secondary {
+border-radius: 999px;
+border: 1px solid #a4452a;
+padding: 11px 24px;
+background-color: transparent;
+color: #a4452a;
+font-size: 14px;
+cursor: pointer;
+transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.contact-button-secondary:hover {
+background-color: #a4452a;
+color: #ffffff;
+transform: translateY(-2px);
+}
+.footer {
+padding: 32px 40px 40px 40px;
+background-color: #f6e1b9;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 16px;
+font-size: 13px;
+color: #5e4731;
+}
+.footer-col-title {
+font-weight: 600;
+margin-bottom: 6px;
+}
+.footer a {
+color: #5e4731;
+text-decoration: none;
+}
+.footer a:hover {
+text-decoration: underline;
+}
+.modal-backdrop {
+position: fixed;
+inset: 0;
+background-color: rgba(0, 0, 0, 0.55);
+display: none;
+align-items: center;
+justify-content: center;
+z-index: 40;
+}
+.modal {
+background-color: #f6f2ea;
+border-radius: 22px;
+max-width: 480px;
+width: 90%;
+padding: 24px 26px 24px 26px;
+box-shadow: 0 22px 48px rgba(0, 0, 0, 0.4);
+position: relative;
+}
+.modal-close {
+position: absolute;
+right: 18px;
+top: 16px;
+border: none;
+background: none;
+font-size: 20px;
+cursor: pointer;
+color: #6d563f;
+}
+.modal h2 {
+margin: 0 0 12px 0;
+font-size: 22px;
+}
+.modal p {
+margin: 0 0 14px 0;
+font-size: 14px;
+color: #6d563f;
+}
+.form-group {
+margin-bottom: 14px;
+display: flex;
+flex-direction: column;
+}
+.form-label {
+font-size: 13px;
+margin-bottom: 4px;
+}
+.form-input,
+.form-textarea {
+border-radius: 12px;
+border: 1px solid #d0c1aa;
+padding: 10px 12px;
+font-size: 14px;
+font-family: inherit;
+resize: vertical;
+min-height: 46px;
+}
+.form-textarea {
+min-height: 120px;
+}
+.form-input:focus,
+.form-textarea:focus {
+outline: none;
+border-color: #a4452a;
+box-shadow: 0 0 0 1px rgba(164, 69, 42, 0.35);
+}
+.form-helper {
+font-size: 12px;
+color: #6d563f;
+margin-top: 4px;
+}
+.form-submit {
+margin-top: 6px;
+border: none;
+padding: 11px 20px;
+border-radius: 999px;
+background-color: #a4452a;
+color: #ffffff;
+font-size: 14px;
+cursor: pointer;
+align-self: flex-start;
+transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.form-submit:hover {
+background-color: #8c3520;
+transform: translateY(-2px);
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+.modal-success-icon {
+font-size: 40px;
+margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+.hero {
+background: #f6e1b9;
+}
+.hero-inner {
+flex-direction: column;
+}
+.hero-text {
+padding: 28px 22px 10px 22px;
+}
+.hero-image-wrapper {
+padding: 10px 22px 24px 22px;
+}
+.nav-inner {
+padding: 10px 18px;
+}
+.nav-links {
+display: none;
+}
+.section {
+padding: 60px 22px;
+}
+.cards-row {
+grid-template-columns: minmax(0, 1fr);
+}
+.section-highlight {
+grid-template-columns: minmax(0, 1fr);
+}
+.benefits-row {
+grid-template-columns: minmax(0, 1fr);
+}
+.process-steps {
+grid-template-columns: minmax(0, 1fr);
+}
+.footer {
+padding: 24px 22px 30px 22px;
+}
+}
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+<section class="hero" id="inicio">
+<div class="hero-inner">
+<div class="hero-text">
+<div class="hero-badge">
+Do pasto baiano à mesa contemporânea
+</div>
+<h1>
+Sabor e cuidado da fazenda MILSEARA
+</h1>
+<p>
+A MILSEARA PECUARIA E AGRICULTURA LTDA une tradição de pecuária em Itapebi com manejo moderno,
+bem-estar animal rigoroso e rastreabilidade completa de cada lote de gado.
+</p>
+<p>
+Produzimos carne bovina e insumos agropecuários para frigoríficos, distribuidores e projetos gastronômicos
+que exigem segurança, sustentabilidade e consistência de qualidade durante todo o ano.
+</p>
+<div class="hero-cta">
+<button class="hero-button" data-open-contact>
+Falar com a equipe técnica
+</button>
+<button class="hero-link" data-scroll-target="#sobre">
+Conhecer nossa história
+</button>
+</div>
+</div>
+<div class="hero-image-wrapper">
+<img
+src="https://images.pexels.com/photos/735968/pexels-photo-735968.jpeg"
+alt="Rebanho de gado em área de pasto próximo a Itapebi, Bahia"
+class="hero-image"
+/>
+<div class="hero-overlay-label">
+Pecuária e agricultura integradas em Itapebi, Bahia
+</div>
+</div>
+</div>
+</section>
+<header class="navbar">
+<div class="nav-inner">
+<div class="logo">
+<span>MILSEARA</span>
+Agropecuária
+</div>
+<nav class="nav-links">
+<a href="#inicio">
+Início
+</a>
+<a href="#sobre">
+Nossa história
+</a>
+<a href="#servicos">
+Portfólio de serviços
+</a>
+<a href="#diferenciais">
+Por que escolher
+</a>
+<a href="#processo">
+Como trabalhamos
+</a>
+<a href="#contato">
+Contato
+</a>
+</nav>
+<button class="nav-contact-button" data-open-contact>
+Enviar mensagem
+</button>
+</div>
+</header>
+<section class="section" id="sobre">
+<div class="section-header">
+<div class="section-kicker">
+Quem cuida da sua cadeia de carne
+</div>
+<h2 class="section-title">
+Da fazenda em Itapebi para o mercado nacional
+</h2>
+<p class="section-subtitle">
+Fundada em Itapebi, na Travessa Belmonte, a MILSEARA PECUARIA E AGRICULTURA LTDA é resultado da união entre
+famílias de produtores rurais e profissionais de gestão agropecuária que decidiram profissionalizar a pecuária de corte
+no extremo sul da Bahia.
+</p>
+</div>
+<div class="section-highlight">
+<div class="section-highlight-text">
+<h3>
+Integração entre pecuária, agricultura e tecnologia
+</h3>
+<p>
+Operamos fazendas com pastagens rotacionadas, suplementação estratégica e monitoramento constante do manejo nutricional,
+reduzindo estresse do rebanho e melhorando o ganho de peso diário.
+</p>
+<p>
+Além da pecuária, desenvolvemos áreas de agricultura para produção de volumoso e grãos, garantindo autonomia na alimentação
+do gado e estabilidade de custos para nossos clientes industriais.
+</p>
+<p>
+Todos os animais são acompanhados com registros detalhados de procedência, calendário sanitário e dados zootécnicos,
+facilitando auditorias e atendendo a programas rigorosos de compra de grandes redes.
+</p>
+<ul class="list">
+<li>
+Equipe formada por veterinários, zootecnistas e gestores especialistas em logística agroindustrial.
+</li>
+<li>
+Conectamos campo, frigorífico e varejo com informação clara, prazos cumpridos e previsibilidade de entrega.
+</li>
+<li>
+Atuamos com contratos de médio e longo prazo para garantir fornecimento contínuo e planejado.
+</li>
+</ul>
+</div>
+<div class="section-highlight-image">
+<div class="section-highlight-note">
+Manejo de pasto, bem-estar animal e nutrição de precisão
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="servicos">
+<div class="section-header">
+<div class="section-kicker">
+O que entregamos
+</div>
+<h2 class="section-title">
+Serviços pensados para toda a cadeia de valor
+</h2>
+<p class="section-subtitle">
+Atendemos frigoríficos, distribuidores, restaurantes e investidores que buscam pecuária de corte com previsibilidade,
+conformidade sanitária e planejamento de abate alinhado à demanda de mercado.
+</p>
+</div>
+<div class="cards-row">
+<article class="card">
+<div class="card-tag">
+Rebanho pronto para abate
+</div>
+<h3 class="card-title">
+Fornecimento programado de bois gordos
+</h3>
+<p class="card-text">
+Planejamos lotes de bois terminados com base em cronogramas de abate, garantindo peso, acabamento de carcaça
+e documentação alinhados às exigências de cada cliente industrial.
+</p>
+<p class="card-text">
+Os animais são criados em sistemas de pasto com suplementação estratégica e avaliações periódicas de ganho de peso,
+garantindo eficiência produtiva e bem-estar.
+</p>
+<p class="card-text">
+Durante todo o ciclo, compartilhamos indicadores de desempenho e previsões de entrega para facilitar o planejamento
+de frigoríficos e distribuidores.
+</p>
+<div class="card-badge">
+Ideal para indústrias e grandes distribuidores
+</div>
+</article>
+<article class="card">
+<div class="card-tag">
+Gestão do campo
+</div>
+<h3 class="card-title">
+Consultoria em pecuária e agricultura integrada
+</h3>
+<p class="card-text">
+Oferecemos consultoria técnica para produtores que desejam estruturar sistemas integrados de pecuária e agricultura,
+com foco em aumento de produtividade por hectare.
+</p>
+<p class="card-text">
+Desenhamos projetos de formação de pastagens, uso de adubação racional, integração lavoura-pecuária e estratégias de
+suplementação de acordo com o perfil da propriedade.
+</p>
+<p class="card-text">
+Acompanhamos a implantação em campo, treinamos equipes e disponibilizamos rotinas de controle para manter o sistema
+organizado e financeiramente saudável.
+</p>
+<div class="card-badge">
+Para fazendas em fase de profissionalização
+</div>
+</article>
+<article class="card">
+<div class="card-tag">
+Soluções sob medida
+</div>
+<h3 class="card-title">
+Parcerias de produção e customização de lotes
+</h3>
+<p class="card-text">
+Desenvolvemos projetos de parceria em que estruturamos a produção de gado de corte sob especificações definidas pelo cliente,
+como idade de abate, peso médio e protocolos sanitários.
+</p>
+<p class="card-text">
+Esse modelo possibilita que redes de varejo, distribuidores premium e marcas de carne trabalhem com rebanhos dedicados,
+mantendo padrão de produto e narrativa de origem.
+</p>
+<p class="card-text">
+Toda a operação é acompanhada por relatórios periódicos de desempenho do rebanho, origem dos alimentos e indicadores
+de sustentabilidade do sistema produtivo.
+</p>
+<div class="card-badge">
+Perfeito para marcas de carne e food service
+</div>
+</article>
+</div>
+</section>
+<section class="section" id="diferenciais">
+<div class="section-header">
+<div class="section-kicker">
+Por que confiar na MILSEARA
+</div>
+<h2 class="section-title">
+Diferenciais que protegem o seu negócio
+</h2>
+<p class="section-subtitle">
+Mais do que gado, entregamos previsibilidade operacional, transparência de informação e compromisso com padrões sanitários
+que atendem aos mercados mais exigentes.
+</p>
+</div>
+<div class="benefits-row">
+<div class="benefit">
+<h3>
+Rastreabilidade total do rebanho
+</h3>
+<p>
+Cada lote comercializado traz histórico de origem, manejo nutricional, calendário de vacinação e registros de pesagem,
+facilitando auditorias, certificações e programas de qualidade de carne.
+</p>
+<p>
+Esse acompanhamento reduz riscos para indústrias e distribuidores, que passam a contar com um fornecedor alinhado às
+principais exigências de varejistas e órgãos reguladores.
+</p>
+</div>
+<div class="benefit">
+<h3>
+Compromisso com bem-estar e sustentabilidade
+</h3>
+<p>
+Adotamos práticas de manejo que minimizam o estresse animal, com sombra, água de qualidade e lotação de pasto controlada,
+resultando em ganho de peso consistente e carcaças mais padronizadas.
+</p>
+<p>
+Ao integrar pecuária e agricultura, reduzimos desperdícios, aproveitamos melhor o solo e diminuímos impactos ambientais,
+sempre respeitando as características do bioma local.
+</p>
+</div>
+<div class="benefit">
+<h3>
+Equipe próxima e comunicação clara
+</h3>
+<p>
+Mantemos um canal direto entre nossa equipe técnica e os responsáveis pela compra nos frigoríficos, centros de distribuição
+e redes de restaurantes, acelerando decisões e ajustes no planejamento.
+</p>
+<p>
+Trabalhamos com relatórios periódicos e reuniões de alinhamento para garantir que metas de volume, qualidade e prazo
+sejam cumpridas com segurança.
+</p>
+</div>
+</div>
+</section>
+<section class="section" id="processo">
+<div class="section-header">
+<div class="section-kicker">
+Do pasto ao cliente
+</div>
+<h2 class="section-title">
+Como organizamos o fluxo de trabalho
+</h2>
+<p class="section-subtitle">
+Nosso processo foi desenhado para dar visibilidade às etapas de produção e simplificar a integração entre fazenda,
+indústria e mercado, mantendo sempre o foco em qualidade de carne e previsibilidade de entrega.
+</p>
+</div>
+<div class="process-steps">
+<div class="step">
+<div class="step-number">
+Etapa 1
+</div>
+<h3>
+Planejamento técnico e comercial
+</h3>
+<p>
+Começamos alinhando metas de peso, volume mensal e exigências sanitárias com o cliente, definindo cronogramas de abate
+e parâmetros de classificação de carcaça que serão monitorados ao longo do ciclo.
+</p>
+<p>
+Com base nesses dados, estruturamos o uso das áreas de pasto, compras de insumos, suplementação e equipes necessárias
+para cumprir o planejamento com segurança.
+</p>
+</div>
+<div class="step">
+<div class="step-number">
+Etapa 2
+</div>
+<h3>
+Manejo integrado do rebanho
+</h3>
+<p>
+Durante o ciclo de cria, recria e engorda, registramos ganho de peso, condição de pastagem, sanidade do rebanho e
+consumo de suplementos, ajustando o manejo sempre que necessário.
+</p>
+<p>
+Nessa etapa, mantemos o cliente informado por meio de relatórios simples e objetivos, com indicadores que impactam
+diretamente a qualidade e o custo final do produto.
+</p>
+</div>
+<div class="step">
+<div class="step-number">
+Etapa 3
+</div>
+<h3>
+Preparação para embarque e pós-entrega
+</h3>
+<p>
+Na fase final, organizamos triagem, jejum, logística interna e documentação de cada lote, garantindo embarque
+pontual e condições adequadas para transporte até o frigorífico.
+</p>
+<p>
+Após a entrega, coletamos feedback sobre rendimento de carcaça e qualidade da carne, ajustando o planejamento
+para os próximos ciclos de produção.
+</p>
+</div>
+</div>
+</section>
+<section class="section contact-section" id="contato">
+<div class="section-header">
+<div class="section-kicker">
+Vamos conversar
+</div>
+<h2 class="section-title">
+Conte para nós o que você precisa da pecuária
+</h2>
+<p class="section-subtitle">
+Seja para estruturar contratos de fornecimento, tirar dúvidas técnicas sobre manejo ou iniciar um projeto de parceria,
+basta enviar uma mensagem com algumas informações básicas sobre o seu negócio.
+</p>
+</div>
+<div class="contact-actions">
+<button class="contact-button-primary" data-open-contact>
+Abrir formulário de contato
+</button>
+<button class="contact-button-secondary" data-scroll-target="#servicos">
+Ver serviços novamente
+</button>
+</div>
+</section>
+<footer class="footer">
+<div>
+<div class="footer-col-title">
+Endereço
+</div>
+<p>
+Travessa Belmonte, 5, Térreo, 45855-000, Itapebi, Centro, Bahia, Brasil
+</p>
+</div>
+<div>
+<div class="footer-col-title">
+Contato oficial
+</div>
+<p>
+E-mail:
+<a href="mailto:main@milsearapecuariaeagricultura.pro">
+main@milsearapecuariaeagricultura.pro
+</a>
+</p>
+</div>
+<div>
+<div class="footer-col-title">
+MILSEARA PECUARIA E AGRICULTURA LTDA
+</div>
+<p>
+Pecuária de corte e agricultura integrada com foco em qualidade, rastreabilidade e relacionamento de longo prazo.
+</p>
+</div>
+</footer>
+</div>
+<div class="modal-backdrop" id="contactModal">
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+<button class="modal-close" type="button" data-close-modal>
+×
+</button>
+<h2 id="contactModalTitle">
+Fale com a equipe MILSEARA
+</h2>
+<p>
+Preencha os campos abaixo para que possamos entender o seu contexto e responder com a melhor solução em pecuária e agricultura.
+</p>
+<form id="contactForm">
+<div class="form-group">
+<label class="form-label" for="nome">
+Nome ou empresa
+</label>
+<input
+id="nome"
+name="nome"
+type="text"
+class="form-input"
+placeholder="Como devemos chamar você ou sua organização?"
+required
+/>
+</div>
+<div class="form-group">
+<label class="form-label" for="email">
+E-mail para resposta
+</label>
+<input
+id="email"
+name="email"
+type="email"
+class="form-input"
+placeholder="Informe um e-mail que você acompanha com frequência"
+required
+/>
+<div class="form-helper">
+Utilizaremos seu e-mail apenas para responder à sua mensagem sobre serviços da MILSEARA.
+</div>
+</div>
+<div class="form-group">
+<label class="form-label" for="assunto">
+Assunto da mensagem
+</label>
+<input
+id="assunto"
+name="assunto"
+type="text"
+class="form-input"
+placeholder="Ex.: Fornecimento de bois gordos, parceria de produção, consultoria"
+required
+/>
+</div>
+<div class="form-group">
+<label class="form-label" for="mensagem">
+Descreva sua necessidade
+</label>
+<textarea
+id="mensagem"
+name="mensagem"
+class="form-textarea"
+placeholder="Conte em poucas linhas o volume desejado, prazos, região de atuação ou dúvidas que gostaria de esclarecer."
+required
+></textarea>
+<div class="form-helper">
+Quanto mais contexto você compartilhar, mais assertiva será nossa resposta.
+</div>
+</div>
+<button class="form-submit" type="submit">
+Enviar mensagem
+</button>
+</form>
+</div>
+</div>
+<div class="modal-backdrop" id="successModal">
+<div class="modal" role="alertdialog" aria-modal="true" aria-labelledby="successModalTitle">
+<button class="modal-close" type="button" data-close-modal>
+×
+</button>
+<div class="modal-success-icon">
+✔
+</div>
+<h2 id="successModalTitle">
+Mensagem enviada com sucesso
+</h2>
+<p>
+Recebemos suas informações e a equipe MILSEARA já foi notificada. Em breve você receberá um retorno pelo e-mail informado,
+com orientações e próximos passos para o seu projeto.
+</p>
+<p>
+Enquanto isso, fique à vontade para revisar nossos serviços e diferenciais aqui no site.
+</p>
+<button class="form-submit" type="button" data-close-modal>
+Voltar ao site
+</button>
+</div>
+</div>
+<script>
+function openModal(modal) {
+if (modal) {
+modal.style.display = "flex";
+document.body.style.overflow = "hidden";
+}
+}
+function closeModal(modal) {
+if (modal) {
+modal.style.display = "none";
+document.body.style.overflow = "";
+}
+}
+document.querySelectorAll("[data-open-contact]").forEach(function(element) {
+element.addEventListener("click", function() {
+var contactModal = document.getElementById("contactModal");
+openModal(contactModal);
+});
+});
+document.querySelectorAll("[data-close-modal]").forEach(function(element) {
+element.addEventListener("click", function() {
+var modal = element.closest(".modal-backdrop");
+closeModal(modal);
+});
+});
+document.querySelectorAll(".modal-backdrop").forEach(function(backdrop) {
+backdrop.addEventListener("click", function(event) {
+if (event.target === backdrop) {
+closeModal(backdrop);
+}
+});
+});
+document.querySelectorAll("[data-scroll-target]").forEach(function(element) {
+element.addEventListener("click", function() {
+var targetId = element.getAttribute("data-scroll-target");
+var target = document.querySelector(targetId);
+if (target) {
+target.scrollIntoView({ behavior: "smooth" });
+}
+});
+});
+var contactForm = document.getElementById("contactForm");
+if (contactForm) {
+contactForm.addEventListener("submit", function(event) {
+event.preventDefault();
+var contactModal = document.getElementById("contactModal");
+var successModal = document.getElementById("successModal");
+closeModal(contactModal);
+openModal(successModal);
+contactForm.reset();
+});
+}
+</script>
+</body>
+</html>
